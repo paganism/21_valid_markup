@@ -1,6 +1,6 @@
 # Site of Real Estate Agency
 
-[TODO. There will be project description]
+Site of Estate Agency
 
 # Project Goals
 

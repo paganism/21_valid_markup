@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="ru">
 
 <head>
@@ -7,6 +9,7 @@
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -20,6 +23,7 @@
   <![endif]-->
 
   <meta charset="utf-8">
+  <title>21_valid_markup</title>
 </head>
 
 <body>
@@ -28,24 +32,24 @@
   <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+      <li><a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a></li>
       <li class="sidebar-brand">
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location="#top"">Агентство
+        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Агентство</button>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location="#top"">Главная
+        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Главная</button>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">О нас
+        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">О нас</button>
       </li>
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">Услуги
+        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#services'">Услуги</button>
       </li>
       <!-- <li>
         <a href="#portfolio" onclick = $("#menu-close").click(); >Портфолио</a>
       </li> -->
       <li>
-        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#contact'">Контакты
+        <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#contact'">Контакты</button>
       </li>
     </ul>
   </nav>
@@ -53,8 +57,8 @@
   <!-- Header -->
   <header id="top" class="header">
     <div class="text-vertical-center">
-      <div style="margin: 0; padding: 0; font-size: 4.5em; font-weight: 700;">Твой Дом</div>
-      <div style="margin-top: 20;margin-bottom: 10;font-weight: 500; font-size: 24">Агентство недвижимости</div>
+      <div class="title-one">Твой Дом</div>
+      <div class="title-two">Агентство недвижимости</div>
       <br>
       <a href="#about" class="btn btn-dark btn-lg">Узнать больше >></a>
     </div>
@@ -144,14 +148,14 @@
 
   <!-- Map -->
   <section id="contact">
-    <div id="map" class="map" style="width: 100%; height: 100%"></div>
+    <div id="map" class="map"></div>
 
 
     <div class="container">
     <div class="row text-center">
       <div class="col-lg-12">
-      <div style="font-size: 30; margin-top: 40; margin-bottom: 20;">Наш офис</div>
-      <img src="img/office place.jpg" width="600" class="img-rounded center-block">
+      <div class="title-office">Наш офис</div>
+      <img src="img/office_place.jpg" alt="office_place" width="600" class="img-rounded center-block">
       </div>
     </div>
     </div>
@@ -179,7 +183,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center" id="contact">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
           <h4><strong>Твой Дом</strong>
           </h4>
           <p>г. Москва<br>Старомонетный переулок, 10</p>
@@ -191,10 +195,10 @@
           <br>
           <ul class="list-inline">
             <li>
-              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></a></i>
+              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></i></a>
             </li>
             <li>
-              <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></a></i>
+              <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></i></a>
             </li>
           </ul>
         </div>
